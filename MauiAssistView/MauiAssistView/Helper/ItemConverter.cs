@@ -7,7 +7,7 @@ using Syncfusion.Maui.AIAssistView;
 
 namespace MauiAssistView
 {
-    public class ItemConverter : IAssistItemConverter
+    public class AssistItemConverter : IAssistItemConverter
     {
         public IAssistItem ConvertToAssistItem(object customItem, SfAIAssistView assistView)
         {

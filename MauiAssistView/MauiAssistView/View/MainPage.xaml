@@ -6,7 +6,7 @@
              x:Class="MauiAssistView.MainPage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:ItemConverter x:Key="AssistItemConverter" />
+            <local:AssistItemConverter x:Key="converter" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.BindingContext>
@@ -14,5 +14,5 @@
     </ContentPage.BindingContext>
     <syncfusion:SfAIAssistView x:Name="assistView"
                                ItemsSource="{Binding AssistItemsCollection}"
-                               ItemsSourceConverter="{StaticResource AssistItemConverter}" />
+                               ItemsSourceConverter="{StaticResource converter}" />
 </ContentPage>
